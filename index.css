@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 .product1,
 .product2 {
@@ -44,12 +47,13 @@ figure {
 .nav {
   background-color: aquamarine;
   padding: 1% 1%;
+  height: 25px;
 }
 
 .nav-left {
   float: left;
   display: inline;
-  width: 75%;
+  width: 25%;
   padding-left: 4px;
 }
 .nav-left span {
@@ -58,7 +62,7 @@ figure {
 }
 .nav-links {
   display: inline;
-  width: 25%;
+  float: right;
 }
 
 .nav-links div {
@@ -107,7 +111,7 @@ h2 {
 #lbl-email,
 #lbl-msg {
   display: inline-block;
-  margin-left: 300px;
+  margin-left: 20%;
   font-size: larger;
 }
 
@@ -140,4 +144,8 @@ h2 {
 }
 #submit:hover {
   cursor: pointer;
+}
+
+img {
+  max-width: 100%;
 }
