@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+}
+.product1,
+.product2 {
+  height: auto;
+  width: 100%;
+}
+
+#item-img {
+  width: 400px;
+  height: 250px;
+  box-shadow: 12px 12px 2px 1px rgba(46, 46, 48, 0.2);
+}
+
+.home-img img {
+  height: 670px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.product1,
+.product2 {
+  text-align: center;
+  background-color: aqua;
+  border: 2px solid blue;
+}
+
+.product1 h3,
+.product2 h3 {
+  text-align: left;
+  text-shadow: 2px 2px 5px red;
+  font-size: 25px;
+}
+
+.items {
+  display: inline;
+}
+
+figure {
+  display: inline-block;
+}
+
+.nav {
+  background-color: aquamarine;
+  padding: 1% 1%;
+}
+
+.nav-left {
+  float: left;
+  display: inline;
+  width: 75%;
+  padding-left: 4px;
+}
+.nav-left span {
+  font-family: fantasy;
+  font-size: 25px;
+}
+.nav-links {
+  display: inline;
+  width: 25%;
+}
+
+.nav-links div {
+  display: inline;
+  padding: 2px 5px;
+}
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: rgb(252, 86, 9);
+}
+
+a:active {
+  color: blue;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Lucida Handwriting", cursive;
+  background-color: blanchedalmond;
+  margin: 0;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.feedback {
+  background-color: coral;
+  height: 350px;
+}
+
+#feedback-txt {
+  display: block;
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+  font-size: 25px;
+  padding-top: 4px;
+}
+
+#lbl-name,
+#lbl-email,
+#lbl-msg {
+  display: inline-block;
+  margin-left: 300px;
+  font-size: larger;
+}
+
+#lbl-msg {
+  height: 25px;
+}
+
+#name,
+#email,
+#msg {
+  width: 30%;
+  margin: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+#name,
+#email {
+  margin-left: 65px;
+}
+#msg {
+  height: 80px;
+}
+
+#submit {
+  margin-left: 45%;
+  margin-top: 60px;
+  padding: 10px 15px;
+  background-color: green;
+}
+#submit:hover {
+  cursor: pointer;
+}
