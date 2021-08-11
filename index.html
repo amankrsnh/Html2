@@ -5,37 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Heading 1</h1>
-    <hr>
-    <h2>Heading 2</h2>
-    <hr>
-    <hr>
-    <p>Plaint <br> text</p>
-    <br><hr><br>
-    <ul>
-        <li>abc</li>
-        <li>bcdef</li>
-    </ul>
-    <ol>
-        <li>Cakes</li>
-        <ul>
-            <li>Vanilla</li>
-            <li>Butterscotch</li>
-        </ul>
-        <li>Biscuits</li>
-    </ol>
-
-    <a href="https://www.amerbakeryhut.com" target="_blank">Bakery Page</a>
-    <br><br>
-    <form action="" >
-        <label for="name">Name</label>
-        <input type="text" id='name'><br>
-        <label for="email">Email</label>
-        <input type="text" id='email'>
-        <input type="button" value="Submit">
-    </form>
-
+    <div class='nav'>
+        <div class='nav-left'>
+            <span>AmStore</span>
+        </div>
+        <div class='nav-links'>
+            <div><a href="#"><strong>About</strong></a></div>
+            <div><a href="#"><strong>Services</strong></a></div>
+            <div><a href="#"><strong>Contact</strong></a></div>
+        </div>
+        
+    </div>
+    <div class='home-img'>
+        <img src="images/pexels-andrea-piacquadio-1050244.jpg">
+    </div>
+    <h2>Menu</h2>
+    <div class='product1'>
+        <h3>Clothes</h3>
+        <div class='items'>
+            <a href="#">
+                <figure>
+                    <img id='item-img' src="images/pexels-david-bartus-297933.jpg">
+                    <figcaption><strong>Shirts</strong></figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class='items'>
+            <a href="#">
+                <figure>
+                    <img id='item-img' src="images/pexels-spencer-selover-428340.jpg">
+                    <figcaption><strong>T-Shirts</strong></figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class='items'>
+            <a href="#">
+                <figure>
+                    <img id='item-img' src="images/pexels-mnz-1598507.jpg">
+                    <figcaption><strong>Jeans</strong></figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+    <div class='product2'>
+        <h3>Electronics</h3>
+        <div class='items'>
+            <a href="#">
+                <figure>
+                    <img id='item-img' src="images/pexels-jess-bailey-designs-788946.jpg">
+                    <figcaption><strong>Mobiles</strong></figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class='items'>
+            <a href="#">
+                <figure>
+                    <img id='item-img' src="images/pexels-christina-morillo-1181269.jpg">
+                    <figcaption><strong>Laptops</strong></figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class='items'>
+            <a href="#">
+                <figure>
+                    <img id='item-img' src="images/pexels-curtis-adams-3935334.jpg">
+                    <figcaption><strong>Washing Machine</strong></figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+    <div class='feedback'>
+        <span id='feedback-txt'>Give A feedback</span>
+        <br><br>
+        <div class='feedback-form'>
+            <form>
+                <div>
+                    <label for="name" id='lbl-name'>Name</label>
+                    <input type="text" id='name'><br>
+                </div>
+                <div>
+                    <label for="email" id='lbl-email'>Email</label>
+                    <input type="text" id='email'><br>
+                </div>
+                <div>
+                    <label for="msg" id='lbl-msg'>Your Message</label>
+                    <textarea id='msg' placeholder="Type your message"></textarea>
+                </div>
+                <br>
+                <input type="button" value="Submit" id='submit'>
+            </form>
+        </div>
+    </div>
+    
 </body>
 </html>
