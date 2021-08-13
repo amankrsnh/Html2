@@ -80,8 +80,9 @@ figure {
 .show {
   display: none;
   float: right;
-  width: 10%;
+  width: 50px;
   background-color: white;
+  font-size: small;
 }
 .show > div {
   margin: 4px 4px;
@@ -128,6 +129,7 @@ h2 {
 
 .feedback {
   height: 350px;
+  width: 100%;
 }
 
 #feedback-txt {
@@ -139,7 +141,9 @@ h2 {
 }
 
 .feedback-form {
+  position: relative;
   width: 100%;
+  left: 25%;
 }
 label {
   display: inline-block;
@@ -176,7 +180,7 @@ label {
 #email,
 #msg {
   border-radius: 4px;
-  width: 75%;
+  width: 30%;
 }
 
 #msg {
@@ -184,7 +188,7 @@ label {
 }
 
 #submit {
-  margin-left: 45%;
+  margin-left: 25%;
   margin-top: 60px;
   float: left;
   padding: 10px 15px;
