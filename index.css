@@ -86,8 +86,6 @@ figure {
 .show > div {
   margin: 4px 4px;
 }
-.icon:hover {
-}
 .icon:hover + .show {
   display: block;
 }
