@@ -20,17 +20,6 @@ body {
   border-radius: 6px;
 }
 
-.home-img {
-  position: relative;
-}
-
-.home-txt {
-  position: absolute;
-  color: rgb(182, 177, 177);
-  top: 10%;
-  right: 5%;
-  left: 70%;
-}
 .home-img img {
   height: 42em;
   max-width: 100%;
