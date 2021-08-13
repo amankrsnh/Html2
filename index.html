@@ -118,36 +118,38 @@
     <div class='feedback'>
         <span id='feedback-txt'>Give A Review</span>
         <br><br>
-        <div class='feedback-form'>
-            <form>
-                <div class="input-fld">
-                    <div class="col-25">
-                        <label for="name" id='lbl-name'>Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id='name' name='name'>
-                    </div>
+        <div class="form">
+            <form action="">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Name</label>
                 </div>
-                <div class="input-fld">
-                    <div class="col-25">
-                        <label for="email" id='lbl-email'>Email</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id='email' name='email'>
-                    </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
                 </div>
-                <div class="input-fld">
-                    <div class="col-25">
-                        <label for="msg" id='lbl-msg'>Your Message</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id='msg' placeholder="Type your message"></textarea>
-                    </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Email</label>
                 </div>
-                <br>
-                <input type="button" value="Submit" id='submit'>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Your Message</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Give your feedback..." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
             </form>
-        </div>
+          </div>
+          
     </div>
     <div class="up-arrow">
         <a href="#"><i class="fa fa-angle-up" ></i></a>
