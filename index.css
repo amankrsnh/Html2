@@ -3,9 +3,12 @@ body {
   overflow-x: hidden;
   max-width: 100%;
   width: 100%;
+  background-color: rgb(64, 199, 199);
 }
+
 .product1,
-.product2 {
+.product2,
+.product3 {
   height: auto;
   width: 100%;
 }
@@ -13,24 +16,26 @@ body {
 #item-img {
   width: 400px;
   height: 250px;
-  box-shadow: 12px 12px 2px 1px rgba(46, 46, 48, 0.2);
+  box-shadow: 0 0 4px 2px gray;
+  border-radius: 6px;
 }
 
 .home-img img {
-  height: 670px;
+  height: 42em;
   max-width: 100%;
   width: 100%;
 }
 
 .product1,
-.product2 {
+.product2,
+.product3 {
   text-align: center;
-  background-color: aqua;
   border: 2px solid blue;
 }
 
 .product1 h3,
-.product2 h3 {
+.product2 h3,
+.product3 h3 {
   text-align: left;
   text-shadow: 2px 2px 5px red;
   font-size: 25px;
@@ -45,9 +50,12 @@ figure {
 }
 
 .nav {
-  background-color: aquamarine;
+  background-color: rgb(64, 199, 199);
   padding: 1% 1%;
   height: 25px;
+  position: sticky;
+  top: 0;
+  box-shadow: 3px 3px 2px gray;
 }
 
 .nav-left {
@@ -59,6 +67,32 @@ figure {
 .nav-left span {
   font-family: fantasy;
   font-size: 25px;
+}
+.icon-bar {
+  display: none;
+  position: relative;
+  right: 20px;
+}
+.icon {
+  position: sticky;
+  float: right;
+}
+.show {
+  display: none;
+  float: right;
+  width: 10%;
+  background-color: white;
+}
+.show > div {
+  margin: 4px 4px;
+}
+.icon:hover {
+}
+.icon:hover + .show {
+  display: block;
+}
+.show:hover {
+  display: block;
 }
 .nav-links {
   display: inline;
@@ -95,7 +129,6 @@ h2 {
 }
 
 .feedback {
-  background-color: coral;
   height: 350px;
 }
 
@@ -107,31 +140,47 @@ h2 {
   padding-top: 4px;
 }
 
+.feedback-form {
+  width: 100%;
+}
+label {
+  display: inline-block;
+  width: 25%;
+}
+.input-fld {
+  width: 100%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
 #lbl-name,
 #lbl-email,
 #lbl-msg {
-  display: inline-block;
-  margin-left: 20%;
   font-size: larger;
+  width: 100%;
+  padding-left: 4%;
 }
 
 #lbl-msg {
-  height: 25px;
+  padding-top: 1em;
 }
 
 #name,
 #email,
 #msg {
-  width: 30%;
-  margin: 4px;
-  box-sizing: border-box;
   border-radius: 4px;
+  width: 75%;
 }
 
-#name,
-#email {
-  margin-left: 65px;
-}
 #msg {
   height: 80px;
 }
@@ -139,6 +188,7 @@ h2 {
 #submit {
   margin-left: 45%;
   margin-top: 60px;
+  float: left;
   padding: 10px 15px;
   background-color: green;
 }
@@ -148,4 +198,28 @@ h2 {
 
 img {
   max-width: 100%;
+}
+
+.up-arrow {
+  box-sizing: border-box;
+  font-size: 200%;
+  background-color: aliceblue;
+  width: 1em;
+  padding-left: 0.3%;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-img img {
+    height: 30em;
+  }
+  .icon-bar {
+    display: inline;
+  }
+  .nav-links {
+    display: none;
+  }
 }

@@ -7,13 +7,24 @@
     <title>AmStore | Get Every products at lower cost</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class='nav'>
         <div class='nav-left'>
             <span>AmStore</span>
         </div>
-        <div class='nav-links'>
+        <div class="icon-bar">
+            <span class="icon">
+                <i class="fa fa-bars"></i>
+            </span>
+            <div class="show">
+                <div><a href="#"><strong>About</strong></a></div>
+                <div><a href="#"><strong>Services</strong></a></div>
+                <div><a href="#"><strong>Contact</strong></a></div>
+            </div>
+        </div>
+        <div class='nav-links' id="links">
             <div><a href="#"><strong>About</strong></a></div>
             <div><a href="#"><strong>Services</strong></a></div>
             <div><a href="#"><strong>Contact</strong></a></div>
@@ -21,7 +32,7 @@
         
     </div>
     <div class='home-img'>
-        <img src="images/pexels-andrea-piacquadio-1050244.jpg">
+        <img src="images/pexels-lumn-167703.jpg">
     </div>
     <h2>Menu</h2>
     <div class='product1'>
@@ -78,28 +89,69 @@
             </a>
         </div>
     </div>
+    <div class='product3'>
+        <h3>Furnitures</h3>
+        <div class='items'>
+            <a href="#">
+                <figure>
+                    <img id='item-img' src="images/pexels-jean-van-der-meulen-1454806.jpg">
+                    <figcaption><strong>Bed</strong></figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class='items'>
+            <a href="#">
+                <figure>
+                    <img id='item-img' src="images/pexels-martin-péchy-1866149.jpg">
+                    <figcaption><strong>Sofa</strong></figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class='items'>
+            <a href="#">
+                <figure>
+                    <img id='item-img' src="images/pexels-craig-adderley-2306281.jpg">
+                    <figcaption><strong>Dining Table</strong></figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
     <div class='feedback'>
-        <span id='feedback-txt'>Give A feedback</span>
+        <span id='feedback-txt'>Give A Review</span>
         <br><br>
         <div class='feedback-form'>
             <form>
-                <div>
-                    <label for="name" id='lbl-name'>Name</label>
-                    <input type="text" id='name'><br>
+                <div class="input-fld">
+                    <div class="col-25">
+                        <label for="name" id='lbl-name'>Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id='name'>
+                    </div>
                 </div>
-                <div>
-                    <label for="email" id='lbl-email'>Email</label>
-                    <input type="text" id='email'><br>
+                <div class="input-fld">
+                    <div class="col-25">
+                        <label for="email" id='lbl-email'>Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id='email'>
+                    </div>
                 </div>
-                <div>
-                    <label for="msg" id='lbl-msg'>Your Message</label>
-                    <textarea id='msg' placeholder="Type your message"></textarea>
+                <div class="input-fld">
+                    <div class="col-25">
+                        <label for="msg" id='lbl-msg'>Your Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id='msg' placeholder="Type your message"></textarea>
+                    </div>
                 </div>
                 <br>
                 <input type="button" value="Submit" id='submit'>
             </form>
         </div>
     </div>
-    
+    <div class="up-arrow">
+        <a href="#"><i class="fa fa-angle-up" ></i></a>
+    </div>
 </body>
 </html>
